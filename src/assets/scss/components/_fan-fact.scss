@@ -1,0 +1,61 @@
+/* Fan Fact Area Style
+============================================*/
+.fan-facet-wrap {
+  background-color: var(--golden);
+  padding: 70px;
+  border-radius: 20px;
+}
+.fan-facet-single-item {
+  h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+    font-weight: 800;
+    line-height: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  p {
+    color: #695f2a;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 2.8px;
+    max-width: 100px;
+  }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .fan-facet-wrap {
+    padding: 25px;
+  }
+  .fan-facet-single-item {
+    h1 {
+      font-size: 30px;
+    }
+  }
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .fan-facet-wrap {
+    padding: 30px;
+  }
+  .fan-facet-single-item {
+    h1 {
+      font-size: 35px;
+    }
+  }
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+}

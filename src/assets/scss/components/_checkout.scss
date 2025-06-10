@@ -1,0 +1,115 @@
+/* Checkout Area Style
+============================================*/
+.billing-details-form {
+  background-color: var(--white);
+  box-shadow: 0px 2px 34px 0px rgba(88, 94, 91, 0.1);
+  padding: 50px;
+  h3 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: -0.9px;
+    margin-bottom: 30px;
+  }
+  .form-control {
+    border-color: #dce5e5;
+    background-color: transparent;
+  }
+  textarea {
+    &.form-control {
+      height: auto;
+    }
+  }
+}
+.checkout-cart-total {
+  background-color: #dce5e5;
+  h3 {
+    font-weight: 500;
+    letter-spacing: -0.9px;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .p-30 {
+    padding: 30px;
+    border-bottom: 1px solid var(--white);
+  }
+  .title {
+    font-size: 16px;
+    color: var(--secondary);
+  }
+  .product-q {
+    padding: 17px 30px;
+    border-bottom: 1px solid var(--white);
+    img {
+      width: 80px;
+    }
+    h4 {
+      font-size: 18px;
+      font-weight: 400;
+      max-width: 142px;
+    }
+    .count {
+      color: var(--secondary);
+    }
+    .price {
+      color: var(--body-color);
+      font-weight: 600;
+    }
+  }
+  .form-check-input {
+    border-color: var(--white);
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .form-check-label {
+    position: relative;
+    top: 2px;
+  }
+  .form-check-input:checked[type="checkbox"] {
+    background-color: var(--grey-teal) !important;
+    border-color: var(--grey-teal) !important;
+  }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .billing-details-form {
+    padding: 30px;
+    h3 {
+      margin-bottom: 20px;
+      font-size: 25px;
+    }
+  }
+  .checkout-cart-total {
+    h3 {
+      font-size: 20px;
+    }
+  }
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .billing-details-form {
+    padding: 30px;
+    h3 {
+      margin-bottom: 20px;
+      font-size: 25px;
+    }
+  }
+  .checkout-cart-total {
+    h3 {
+      font-size: 20px;
+    }
+  }
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .billing-details-form {
+    padding: 30px;
+    h3 {
+      margin-bottom: 20px;
+      font-size: 25px;
+    }
+  }
+}

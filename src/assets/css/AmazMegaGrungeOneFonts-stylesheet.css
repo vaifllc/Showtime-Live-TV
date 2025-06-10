@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'AmazMegaGrungeOne';
+    src: url('../fonts/AmazMegaGrungeOne.woff2') format('woff2'),
+        url('../fonts/AmazMegaGrungeOne.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

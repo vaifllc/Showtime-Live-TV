@@ -1,0 +1,65 @@
+/*
+Page-navigation Area Style
+======================================================*/
+.pagination-area {
+  .page-numbers {
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 3px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--secondary);
+    text-decoration: none;
+    transition: var(--transition);
+    border-radius: 6px;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    i {
+      font-size: 22px;
+      font-weight: normal;
+      color: var(--primary);
+      transition: var(--transition);
+    }
+    &:hover {
+      color: var(--white);
+      background-color: var(--white);
+      i {
+        color: var(--white);
+      }
+    }
+    &.next {
+      top: 3px;
+      &:hover {
+        background-color: var(--primary);
+        color: var(--white);
+      }
+    }
+    &:hover {
+      color: var(--white);
+      background-color: var(--primary);
+    }
+    &.current {
+      background-color: var(--secondary);
+      color: var(--white);
+    }
+    &.disabled {
+      cursor: no-drop;
+    }
+  }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .pagination-area {
+    margin-top: 0 !important;
+    .page-numbers {
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+/* Availability Area Style
+============================================*/
+.availability-wrap {
+  border-radius: 10px;
+  background: #f2e394;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.04);
+  padding: 26px 60px;
+  margin-top: -70px;
+  z-index: 1;
+  position: relative;
+}
+.availability-content {
+  margin-bottom: 20px;
+  h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  a {
+    display: inline-block;
+    background-color: var(--secondary);
+    color: var(--white);
+    text-decoration: none;
+    padding: 6.5px 16px;
+    padding-bottom: 3px;
+  }
+}
+.availability-form {
+  max-width: 678px;
+  margin-left: auto;
+  p {
+    font-size: 16px;
+    color: var(--secondary);
+    margin-bottom: 12px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    a {
+      color: #3858ff;
+      text-decoration: none;
+    }
+  }
+  .form-control {
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    &::placeholder {
+      font-size: 16px;
+      color: var(--secondary);
+    }
+  }
+  .btn {
+    right: 5px !important;
+  }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .availability-wrap {
+    padding: 25px;
+  }
+  .availability-content {
+    h3 {
+      font-size: 22px;
+    }
+  }
+  .availability-form {
+    p {
+      margin-bottom: 10px;
+    }
+    .form-control {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .availability-wrap {
+    padding: 30px;
+    margin-top: -93px;
+  }
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .availability-wrap {
+    padding: 30px;
+    margin-top: 50px;
+  }
+}

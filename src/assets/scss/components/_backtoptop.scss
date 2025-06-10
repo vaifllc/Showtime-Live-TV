@@ -1,0 +1,28 @@
+/*
+backtoptop Area Style
+======================================================*/
+#backtotop {
+  position: fixed;
+  top: 100%;
+  right: 30px;
+  bottom: 30px;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: var(--primary);
+  color: var(--white);
+  transform: translateY(-100%);
+  z-index: 2;
+  transition: var(--transition);
+  opacity: 0;
+  font-size: 25px;
+  border-radius: 50px;
+
+  &:hover {
+    background-color: var(--dark);
+  }
+  &.active {
+    opacity: 1;
+  }
+}

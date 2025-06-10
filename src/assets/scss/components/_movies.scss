@@ -1,0 +1,71 @@
+/* Movies Area Style
+============================================*/
+.movies-slide {
+  img {
+    border-radius: 25px;
+  }
+}
+.favorite-match-single-item {
+  background-color: #0b0a19;
+  padding: 50px;
+  border-radius: 10px;
+  h2 {
+    color: var(--white);
+    margin-bottom: 15px;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+    max-width: 311px;
+  }
+  .btn {
+    background-color: var(--golden);
+    color: var(--secondary);
+    &:hover {
+      background-color: var(--secondary);
+      color: var(--white);
+    }
+  }
+  .favorite-match-img {
+    margin-top: 40px;
+  }
+  .favorite-match-img-2 {
+    margin-bottom: 40px;
+  }
+  .favorite-shape {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: -1;
+  }
+}
+.favorite-match-area {
+  &.bg-50 {
+    &::before {
+      background-color: #221516;
+      top: auto;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+    }
+  }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .favorite-match-single-item {
+    padding: 25px;
+    h2 {
+      font-size: 30px;
+    }
+  }
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .favorite-match-single-item {
+    padding: 30px;
+    h2 {
+      font-size: 35px;
+    }
+  }
+}

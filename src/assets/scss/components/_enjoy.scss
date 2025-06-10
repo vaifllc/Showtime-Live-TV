@@ -1,0 +1,158 @@
+/* Enjoy Area Style
+============================================*/
+.enjoy-content {
+  max-width: 592px;
+  h2 {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 30px;
+      width: 154px;
+      height: 2px;
+      background-color: var(--primary);
+      border-radius: 50px;
+    }
+  }
+  .starting-form {
+    background-color: var(--primary);
+    border-radius: 20px;
+    text-align: center;
+    padding: 45.5px 20px;
+    span {
+      font-size: 14px;
+      letter-spacing: 2.8px;
+      color: var(--white);
+      display: block;
+      margin-bottom: 10px;
+    }
+    h1 {
+      color: var(--white);
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 28px;
+      letter-spacing: -0.64px;
+      margin-bottom: 0;
+      sub {
+        bottom: 0;
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+  }
+  .nestor-prepaid {
+    border-radius: 20px;
+    border: 2px solid var(--secondary);
+    padding: 12px 32px;
+    span {
+      color: var(--secondary);
+      display: block;
+      margin-bottom: 5px;
+    }
+    h3 {
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: -0.48px;
+      margin-bottom: 5px;
+    }
+  }
+  .mb-30 {
+    margin-bottom: 30px;
+  }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .enjoy-content {
+    h2 {
+      font-size: 30px;
+    }
+    .starting-form {
+      margin-bottom: 25px;
+      span {
+        font-size: 12px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+    }
+    .nestor-prepaid {
+      h3 {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .enjoy-content {
+    max-width: 100%;
+    h2 {
+      font-size: 35px;
+    }
+    .starting-form {
+      margin-bottom: 25px;
+      span {
+        font-size: 12px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+    }
+    .nestor-prepaid {
+      h3 {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .enjoy-content {
+    .starting-form {
+      span {
+        font-size: 12px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .enjoy-content {
+    .starting-form {
+      h1 {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+/* Min width 1400px to Max width 1799px */
+@media only screen and (min-width: 1400px) and (max-width: 1799px) {
+}
+
+@media only screen and (max-width: 1199px) {
+}

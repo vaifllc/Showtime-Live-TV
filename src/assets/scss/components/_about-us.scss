@@ -1,0 +1,548 @@
+/* About Area Style
+============================================*/
+.who-we-area-content {
+  h2 {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  p {
+    color: var(--silver);
+    margin-bottom: 25px;
+    line-height: 28px;
+    max-width: 570px;
+  }
+  .we-are-list {
+    margin-bottom: 25px;
+    li {
+      color: #f2f2f2;
+      margin-bottom: 12px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      i {
+        position: relative;
+        top: 2px;
+        color: var(--grey-teal);
+        font-size: 24px;
+        margin-right: 5px;
+      }
+    }
+  }
+  .google {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -73px;
+      width: 1px;
+      height: 100%;
+      background-color: #333232;
+    }
+    p {
+      color: #d0d0d0;
+      margin-top: 3px;
+      span {
+        font-weight: 700;
+      }
+    }
+    &.style-two {
+      margin-left: 50px;
+      &::before {
+        display: none;
+      }
+      p {
+        color: var(--body-color);
+      }
+    }
+  }
+}
+.who-we-img-wrap {
+  margin-right: -321px;
+  max-width: 838px;
+  margin-left: auto;
+}
+.who-we-img-wrap-two {
+  .who-we-img {
+    .review {
+      left: 30px;
+      &.bg-golden {
+        margin-bottom: 35px;
+      }
+    }
+  }
+}
+.who-we-img {
+  img {
+    border-radius: 10px;
+  }
+  .review {
+    max-width: 155px;
+    background-color: #a4d1c0;
+    border-radius: 10px;
+    text-align: center;
+    padding: 25.5px 8px;
+    position: relative;
+    left: 78px;
+    &.mb-minus-53 {
+      position: relative;
+      bottom: -110px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: -4px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 8px;
+      height: 8px;
+      background-color: #a4d1c0;
+      transform: rotate(-45deg);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 8px;
+      height: 8px;
+      background-color: #a4d1c0;
+      transform: rotate(-45deg);
+    }
+    .review-in {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -4px;
+        bottom: 0;
+        margin: auto;
+        width: 8px;
+        height: 8px;
+        background-color: #a4d1c0;
+        transform: rotate(-45deg);
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -4px;
+        bottom: 0;
+        margin: auto;
+        width: 8px;
+        height: 8px;
+        background-color: #a4d1c0;
+        transform: rotate(-45deg);
+      }
+    }
+    span {
+      color: #174433;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 2.8px;
+    }
+    h1 {
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 50px;
+      letter-spacing: 2px;
+      margin-bottom: 0;
+    }
+    &.bg-golden {
+      margin-bottom: 55px;
+      left: 40px;
+      &::before {
+        background-color: var(--golden);
+      }
+      &::after {
+        background-color: var(--golden);
+      }
+      .review-in {
+        &::before {
+          background-color: var(--golden);
+        }
+        &::after {
+          background-color: var(--golden);
+        }
+      }
+    }
+  }
+}
+.border-3 {
+  margin-top: -60px;
+  z-index: -1;
+  position: relative;
+}
+.our-mision-content {
+  max-width: 598px;
+  margin-left: auto;
+  h2 {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .mission-list {
+    li {
+      margin-bottom: 12px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      i {
+        position: relative;
+        top: -2px;
+        margin-right: 10px;
+        font-size: 24px;
+        color: var(--grey-teal);
+      }
+      span {
+        color: var(--secondary);
+      }
+      p {
+        line-height: 1.6;
+        margin-top: 10px;
+      }
+    }
+  }
+  &.vision {
+    padding-top: 160px;
+    padding-bottom: 0;
+  }
+}
+.our-mision-img {
+  margin-bottom: -95px;
+}
+.about-img {
+  position: relative;
+  z-index: 1;
+  img {
+    border-radius: 10px;
+  }
+  .affordable {
+    border-radius: 10px;
+    border: 1px solid var(--Black, #0a0102);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(27px);
+    padding: 20px;
+    max-width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    h4 {
+      font-size: 20px;
+      font-weight: 500;
+    }
+    h2 {
+      background-color: var(--secondary);
+      color: var(--white);
+      margin-bottom: 0;
+      display: inline-block;
+      transform: rotate(-5deg);
+      font-size: 30px;
+      padding: 5px;
+    }
+  }
+}
+.about-content {
+  margin-left: 22px;
+  .accordion {
+    .accordion-item {
+      background-color: transparent !important;
+      margin-bottom: 25px;
+      position: relative;
+      padding-left: 30px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        background-color: #d2d2d2;
+        border-radius: 50px;
+      }
+      .accordion-header {
+        .accordion-button {
+          padding: 0 !important;
+          color: #d2d2d2 !important;
+          font-size: 28px;
+          font-weight: 600;
+          margin-bottom: 0;
+          &::before {
+            display: none;
+          }
+          &::after {
+            display: none;
+          }
+        }
+      }
+      &.active {
+        .accordion-header {
+          .accordion-button {
+            &:not(.show) {
+              color: var(--secondary) !important;
+            }
+          }
+        }
+        &::before {
+          background-color: var(--grey-teal);
+        }
+      }
+    }
+    .accordion-body {
+      padding: 0;
+      margin-top: 20px;
+      .about-list {
+        margin-bottom: 20px;
+        li {
+          margin-bottom: 12px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          i {
+            color: var(--grey-teal);
+            font-size: 24px;
+            position: relative;
+            top: -1px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .who-we-area-content {
+    margin-bottom: 30px;
+    h2 {
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    .we-are-list {
+      li {
+        font-size: 14px;
+        i {
+          font-size: 18px;
+        }
+      }
+    }
+    .google {
+      &::before {
+        display: none;
+      }
+    }
+  }
+  .who-we-img-wrap {
+    margin-right: 0;
+  }
+  .who-we-img {
+    .review {
+      text-align: center;
+      left: 0;
+      margin: auto;
+      &.mb-minus-53 {
+        bottom: 0;
+      }
+      &.bg-golden {
+        margin-bottom: 30px;
+        left: 0;
+        margin-top: 30px;
+      }
+    }
+  }
+  .who-we-2 {
+    margin-top: 30px;
+  }
+  .our-mision-content {
+    margin-right: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    &.vision {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      margin-left: 0;
+    }
+  }
+  .our-mision-img {
+    margin-bottom: 0;
+    margin-bottom: 30px;
+  }
+  .about-content {
+    margin-left: 0;
+    margin-top: 30px;
+    .accordion {
+      .accordion-item {
+        padding-left: 20px;
+        .accordion-header {
+          .accordion-button {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .who-we-img {
+    .review {
+      span {
+        font-size: 12px;
+        letter-spacing: normal;
+      }
+    }
+  }
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .who-we-area-content {
+    margin-bottom: 30px;
+    h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    .we-are-list {
+      li {
+        font-size: 16px;
+        i {
+          font-size: 18px;
+        }
+      }
+    }
+    .google {
+      &::before {
+        display: none;
+      }
+    }
+  }
+  .who-we-img-wrap {
+    margin-right: 0;
+  }
+  .who-we-img {
+    .review {
+      text-align: center;
+      left: 0;
+      margin: auto;
+      &.mb-minus-53 {
+        bottom: 0;
+      }
+      &.bg-golden {
+        margin-bottom: 30px;
+        left: 0;
+        margin-top: 30px;
+      }
+    }
+  }
+  .our-mision-content {
+    margin-right: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    &.vision {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      margin-left: 0;
+    }
+  }
+  .our-mision-img {
+    margin-bottom: 0;
+    margin-bottom: 30px;
+  }
+  .about-content {
+    margin-left: 0;
+    margin-top: 30px;
+    .accordion {
+      .accordion-item {
+        padding-left: 20px;
+        .accordion-header {
+          .accordion-button {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .who-we-area-content {
+    h2 {
+      font-size: 39px;
+    }
+  }
+
+  .our-mision-content {
+    margin-right: 0;
+    &.vision {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      margin-left: 30px;
+    }
+  }
+  .our-mision-img {
+    margin-bottom: 0;
+    margin-bottom: 30px;
+  }
+  .about-content {
+    margin-left: 0;
+    margin-top: 30px;
+    .accordion {
+      .accordion-item {
+        padding-left: 20px;
+        .accordion-header {
+          .accordion-button {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .our-mision-content {
+    margin-right: 30px;
+    &.vision {
+      padding-top: 60px;
+      padding-bottom: 100px;
+      margin-left: 30px;
+    }
+  }
+  .our-mision-img {
+    margin-bottom: 0;
+  }
+}

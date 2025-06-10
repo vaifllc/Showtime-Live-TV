@@ -1,0 +1,135 @@
+/* Authentication Area Style
+============================================*/
+.authentication-form {
+  background-color: #dce5e5;
+  padding: 60px;
+  h2 {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+  .form-control {
+    border-radius: 4px;
+    background-color: transparent;
+    border-color: var(--white);
+    font-size: 18px;
+    color: var(--secondary);
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 70px;
+  }
+  textarea {
+    &.form-control {
+      height: auto;
+    }
+  }
+  .floating {
+    font-size: 16px;
+    padding: 22px 25px;
+    &::after {
+      background-color: #dce5e5 !important;
+    }
+  }
+  .form-check {
+    .form-check-input {
+      background-color: transparent;
+      border-color: #6a9c89;
+      border-radius: 0;
+      &:focus {
+        box-shadow: none;
+      }
+      &:checked[type="checkbox"] {
+        background-color: #6a9c89;
+        border-color: #6a9c89;
+      }
+    }
+  }
+  .forgot {
+    font-size: 15px;
+    color: var(--secondary);
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    &:hover {
+      color: var(--primary);
+    }
+  }
+  .btn.px-275 {
+    padding: 14px 102px 12px;
+  }
+  .form-group {
+    border-radius: 10px;
+    .form-control {
+      font-size: 20px;
+      &::placeholder {
+        color: var(--secondary);
+        font-size: 20px;
+      }
+    }
+    &.border {
+      border-color: var(--white) !important;
+    }
+    .border-end {
+      border-color: var(--white) !important;
+    }
+  }
+  #otp-form {
+    .form-control {
+      padding: 10px;
+    }
+  }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .authentication-form {
+    padding: 30px;
+    h2 {
+      font-size: 30px;
+    }
+    .form-control {
+      height: 55px;
+    }
+    .floating {
+      padding: 17px 25px;
+    }
+    .btn.px-275 {
+      padding: 14px 20px 12px;
+    }
+  }
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .authentication-form {
+    padding: 30px;
+    h2 {
+      font-size: 35px;
+    }
+    .form-control {
+      height: 55px;
+    }
+    .floating {
+      padding: 17px 25px;
+    }
+    .btn.px-275 {
+      padding: 14px 20px 12px;
+    }
+  }
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .authentication-form {
+    padding: 40px;
+    h2 {
+      font-size: 40px;
+    }
+    .form-control {
+      height: 55px;
+    }
+    .floating {
+      padding: 17px 25px;
+    }
+  }
+}

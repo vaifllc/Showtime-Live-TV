@@ -1,0 +1,907 @@
+// OTT Platform Demo With BG CSS
+.ott-platform-demo-with-bg {
+  background-color: #201516;
+}
+
+/* Navbar Area Style
+============================================*/
+.ott-platform-navbar {
+  background-color: rgba(10, 1, 2, 0.6) !important;
+  box-shadow: 0px 4px 30px 0px rgba(146, 139, 221, 0.1);
+  backdrop-filter: blur(12px);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9;
+
+  &.sticky {
+    background-color: rgba(10, 1, 2, 0.6) !important;
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: #b8adae;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: "";
+          left: 0;
+          right: 0;
+          margin: auto;
+          bottom: 35px;
+          width: 0;
+          height: 3.5px;
+          background-color: var(--primary);
+          transition: var(--transition);
+        }
+        &.active {
+          color: var(--primary);
+
+          &::before {
+            width: 33px;
+          }
+        }
+        &:hover {
+          color: var(--primary);
+
+          &::before {
+            width: 33px;
+          }
+        }
+      }
+    }
+  }
+  .others-options {
+    li {
+      .icon {
+        color: #b8adae;
+
+        &:hover {
+          color: var(--white);
+        }
+      }
+    }
+  }
+}
+
+/* OTT Platform Slider Area Style
+============================================*/
+.ott-platform-slider-area {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.ott-platform-slider-item {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: {
+    top: 295px;
+    bottom: 100px;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+      268deg,
+      rgba(10, 1, 2, 0.09) 29.81%,
+      rgba(10, 1, 2, 0.63) 63.99%,
+      rgba(10, 1, 2, 0.72) 98.36%
+    );
+    z-index: -1;
+  }
+}
+.ott-platform-slider-content {
+  max-width: 500px;
+  .meta {
+    display: flex;
+    margin-bottom: 15px;
+    padding: {
+      left: 0;
+      right: 0;
+    }
+    li {
+      list-style-type: none;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 2.8px;
+      position: relative;
+      margin-right: 32px;
+
+      a {
+        color: var(--golden);
+        text-decoration: unset;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        right: -17px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 5px;
+        width: 5px;
+        background-color: #d9d9d9;
+        border-radius: 50px;
+      }
+      &:last-child {
+        margin-right: 0;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+  h1 {
+    font-size: 130px;
+    font-weight: 400;
+    font-family: var(--metal-mania-font-family);
+    color: var(--white);
+    margin-bottom: 0;
+    line-height: 1;
+  }
+  .rating-and-clock {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    .rating {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+      padding: {
+        left: 0;
+        right: 0;
+      }
+      li {
+        list-style-type: none;
+        margin-right: 8px;
+
+        i {
+          color: #ffdb20;
+        }
+        span {
+          color: var(--gray4);
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .clock {
+      display: flex;
+      align-items: center;
+      margin-left: 30px;
+
+      span {
+        color: var(--gray4);
+        margin-left: 8px;
+      }
+    }
+  }
+  .inner-bottom-content {
+    margin-top: 80px;
+
+    h5 {
+      color: var(--gray4);
+      font-weight: 400;
+      font-size: var(--font-size-16);
+      margin-bottom: 12px;
+    }
+    p {
+      color: #b5b4b4;
+      margin-bottom: 0;
+
+      a {
+        color: var(--white);
+        text-decoration: none;
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+    .btn-list {
+      display: flex;
+      padding: {
+        left: 0;
+        right: 0;
+      }
+      margin: {
+        top: 30px;
+        bottom: 0;
+      }
+      li {
+        list-style-type: none;
+        margin-right: 15px;
+
+        &:last-child {
+          margin-right: 0;
+
+          .btn {
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            color: var(--primary);
+          }
+        }
+      }
+    }
+  }
+}
+.ott-platform-slider-bottom {
+  max-width: 895px;
+  position: absolute;
+  right: 30px;
+  bottom: 50px;
+  z-index: 1;
+
+  .title {
+    margin-bottom: 20px;
+
+    h5 {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      color: var(--gray4);
+      margin-bottom: 0;
+    }
+  }
+  .lightgallery-vue {
+    position: relative;
+    .video-btn {
+      position: relative;
+      margin-right: 35px;
+
+      i {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 70px;
+        height: 80px;
+        width: 80px;
+        line-height: 80px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        font-size: 25px;
+        color: var(--white);
+        transition: var(--transition);
+        margin: auto;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+  }
+  .item {
+    .arrow-btn {
+      a {
+        i {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 70px;
+          height: 80px;
+          width: 80px;
+          border: 1px solid rgba(255, 255, 255, 0.5);
+          font-size: 25px;
+          color: var(--white);
+          transition: var(--transition);
+
+          &:hover {
+            background-color: var(--primary);
+            border: 1px solid var(--primary);
+          }
+        }
+      }
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.ott-platform-slider-button {
+  position: absolute;
+  right: 30px;
+  top: 45%;
+  transform: translateY(-45%);
+  margin-bottom: 0;
+  z-index: 1;
+  padding: {
+    left: 0;
+    right: 0;
+  }
+  li {
+    list-style-type: none;
+    margin-bottom: 50px;
+
+    span {
+      color: var(--gray4);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 1.4px;
+      writing-mode: vertical-rl;
+      cursor: pointer;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* OTT Platform Slider Area Style
+============================================*/
+.ott-platform-movies-area {
+  overflow: hidden;
+
+  .section-title {
+    max-width: 1320px;
+
+    h2 {
+      margin-bottom: 0;
+    }
+    .btn {
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+  }
+}
+.ott-platform-movies-card {
+  overflow: hidden;
+
+  img {
+    transition: var(--transition);
+  }
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
+
+/* Our Content Area Style
+============================================*/
+.our-content-area {
+  &.ott-platform-our-content {
+    .our-content-img {
+      margin-right: -55px;
+    }
+  }
+}
+
+/* OTT Made Area Style
+============================================*/
+.ott-made-area {
+  background-color: rgba(146, 139, 221, 0.1);
+  margin: 0 30px;
+
+  &.movies-made {
+    margin: 0;
+    background-color: transparent;
+
+    .ott-made-card {
+      background-color: #2b212a;
+    }
+  }
+}
+.ott-made-card {
+  text-align: center;
+  margin-bottom: 25px;
+  background-color: #201516;
+  padding: 70px 65px 65px 65px;
+
+  .image {
+    margin-bottom: 50px;
+  }
+  .content {
+    h3 {
+      font-size: 28px;
+      font-weight: 600;
+      color: var(--white);
+    }
+    p {
+      color: var(--silver);
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* OTT Add Ons Area Style
+============================================*/
+.ott-add-ons-content {
+  margin-left: 55px;
+
+  .accordion {
+    .accordion-item {
+      background-color: transparent !important;
+      margin-bottom: 30px;
+      position: relative;
+      padding-left: 30px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.2);
+      }
+      .accordion-header {
+        .accordion-button {
+          padding: 0 !important;
+          color: var(--white) !important;
+          font-size: 28px;
+          font-weight: 600;
+          margin-bottom: 0;
+          &::before {
+            display: none;
+          }
+          &::after {
+            display: none;
+          }
+          &:not(.collapsed) {
+            color: var(--white) !important;
+          }
+        }
+      }
+      &.active {
+        &::before {
+          background-color: var(--primary);
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .accordion-body {
+      border: none;
+      padding: 0;
+      margin-top: 15px;
+      border-radius: 0;
+
+      p {
+        color: var(--silver);
+      }
+    }
+  }
+}
+
+/* OTT FAQ Area Style
+============================================*/
+.ott-faq-image {
+  position: relative;
+  z-index: 1;
+  margin-right: 80px;
+
+  .wrap-shape {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    z-index: -1;
+  }
+}
+.ott-faq-content {
+  .text-white {
+    font-size: 42px;
+    margin-bottom: 30px;
+  }
+  .accordion {
+    margin-right: 0;
+
+    .accordion-item {
+      background-color: #2c2626;
+    }
+  }
+}
+
+/* OTT Overview Area Style
+============================================*/
+.ott-overview-area {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 130px;
+    background-color: var(--dark);
+    z-index: -1;
+  }
+}
+.ott-overview-inner {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 85px 80px;
+}
+.ott-overview-content {
+  max-width: 305px;
+
+  h2 {
+    font-size: 42px;
+    margin-bottom: 0;
+  }
+}
+.ott-overview-btn {
+  text-align: end;
+
+  .btn {
+    background-color: var(--golden);
+    color: var(--dark);
+
+    &:hover {
+      background-color: var(--dark);
+      color: var(--white);
+    }
+  }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .ott-platform-navbar {
+    padding: {
+      top: 10px !important;
+      bottom: 10px !important;
+    }
+    .navbar-toggler {
+      .burger-menu {
+        span {
+          background-color: var(--white);
+        }
+      }
+    }
+  }
+
+  .ott-platform-slider-item {
+    padding: {
+      top: 165px;
+      bottom: 150px;
+    }
+  }
+  .ott-platform-slider-content {
+    .meta {
+      margin-bottom: 12px;
+
+      li {
+        font-size: 12px;
+      }
+    }
+    h1 {
+      font-size: 60px;
+    }
+    .rating-and-clock {
+      .clock {
+        margin-left: 20px;
+      }
+    }
+    .inner-bottom-content {
+      margin-top: 35px;
+
+      .btn-list {
+        margin-top: 25px;
+      }
+    }
+  }
+  .ott-platform-slider-bottom {
+    display: none;
+  }
+  .ott-platform-slider-button {
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: unset;
+    transform: unset;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    bottom: 70px;
+
+    li {
+      margin: {
+        bottom: 0;
+        right: 25px;
+      }
+      span {
+        writing-mode: unset;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .our-content-area {
+    &.ott-platform-our-content {
+      .our-content-img {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .ott-made-area {
+    margin: 0;
+  }
+  .ott-made-card {
+    padding: 25px;
+
+    .content {
+      h3 {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .ott-add-ons-content {
+    margin: {
+      top: 35px;
+      left: 0;
+    }
+    .accordion {
+      margin-bottom: 0;
+
+      .accordion-item {
+        .accordion-header {
+          .accordion-button {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  .ott-faq-image {
+    margin-right: 0;
+
+    .wrap-shape {
+      max-width: 225px;
+      margin: auto;
+    }
+  }
+  .ott-faq-content {
+    margin-top: 30px;
+
+    .text-white {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    .accordion {
+      margin-bottom: 0;
+    }
+  }
+
+  .ott-overview-inner {
+    padding: 50px 20px;
+  }
+  .ott-overview-content {
+    h2 {
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+  }
+  .ott-overview-btn {
+    text-align: start;
+  }
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ott-platform-navbar {
+    padding: {
+      top: 10px !important;
+      bottom: 10px !important;
+    }
+    .navbar-toggler {
+      .burger-menu {
+        span {
+          background-color: var(--white);
+        }
+      }
+    }
+  }
+
+  .ott-platform-slider-item {
+    padding: {
+      top: 185px;
+      bottom: 300px;
+    }
+  }
+  .ott-platform-slider-bottom {
+    max-width: 635px;
+  }
+
+  .our-content-area {
+    &.ott-platform-our-content {
+      .our-content-img {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .ott-made-area {
+    margin: 0;
+  }
+  .ott-made-card {
+    padding: 25px;
+  }
+
+  .ott-add-ons-content {
+    margin: {
+      top: 35px;
+      left: 0;
+    }
+    .accordion {
+      margin-bottom: 0;
+    }
+  }
+
+  .ott-faq-image {
+    margin-right: 0;
+  }
+  .ott-faq-content {
+    margin-top: 35px;
+
+    .text-white {
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+    .accordion {
+      margin-bottom: 0;
+    }
+  }
+
+  .ott-overview-content {
+    h2 {
+      font-size: 35px;
+    }
+  }
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .ott-platform-navbar {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .ott-platform-slider-item {
+    padding: {
+      top: 185px;
+      bottom: 400px;
+    }
+  }
+
+  .our-content-area {
+    &.ott-platform-our-content {
+      .our-content-img {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .ott-made-area {
+    margin: 0;
+  }
+  .ott-made-card {
+    padding: 25px;
+  }
+
+  .ott-add-ons-content {
+    margin-left: 0;
+
+    .accordion {
+      margin-bottom: 0;
+    }
+  }
+
+  .ott-faq-image {
+    margin-right: 0;
+  }
+  .ott-faq-content {
+    margin-top: 35px;
+
+    .accordion {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .ott-platform-slider-item {
+    padding: {
+      top: 230px;
+      bottom: 420px;
+    }
+  }
+
+  .our-content-area {
+    &.ott-platform-our-content {
+      .our-content-img {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .ott-made-area {
+    margin: 0;
+  }
+  .ott-made-card {
+    padding: 25px;
+  }
+
+  .ott-add-ons-content {
+    margin-left: 30px;
+
+    .accordion {
+      margin-bottom: 0;
+    }
+  }
+
+  .ott-faq-image {
+    margin-right: 0;
+  }
+  .ott-faq-content {
+    margin-left: 30px;
+
+    .accordion {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* Min width 1400px to Max width 1500px */
+@media only screen and (min-width: 1400px) and (max-width: 1500px) {
+  .ott-platform-slider-item {
+    padding-top: 250px;
+  }
+  .ott-platform-slider-bottom {
+    max-width: 765px;
+  }
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+  // OTT Platform Slider Area Style
+  .ott-platform-slider-bottom {
+    right: 45px;
+  }
+  .ott-platform-slider-button {
+    right: 45px;
+  }
+
+  // OTT Made Area Style
+  .ott-made-area {
+    margin: 0 100px;
+  }
+}

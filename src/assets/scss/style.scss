@@ -1,0 +1,56 @@
+/**
+@File: Nylo Template Styles
+
+* This file contains the styling for the actual template, this
+is the file you need to edit to change the look of the template.
+
+This files table contents are outlined below>>>>>
+
+*******************************************
+**/
+
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+// Metal Mania Fonts (Newly Added)
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
+
+// Default variable overrides
+@import "./variables";
+
+// Components
+@import "./components/global";
+@import "./components/preloader";
+@import "./components/backtoptop";
+@import "./components/pagination";
+@import "./components/navbar";
+@import "./components/banner";
+@import "./components/availability";
+@import "./components/services";
+@import "./components/blast-off";
+@import "./components/why-choose";
+@import "./components/pricing";
+@import "./components/testomonial";
+@import "./components/footer";
+@import "./components/about-us";
+@import "./components/features";
+@import "./components/our-content";
+@import "./components/movies";
+@import "./components/benefits";
+@import "./components/fan-fact";
+@import "./components/faq";
+@import "./components/header";
+@import "./components/enjoy";
+@import "./components/blog";
+@import "./components/sidebar-widget";
+@import "./components/contact-us";
+@import "./components/authentication";
+@import "./components/products";
+@import "./components/cart";
+@import "./components/checkout";
+@import "./components/rtl";
+
+// Components (Newly Added)
+@import "./components/ott-platform";
+@import "./components/movie-home";
+@import "./components/satellite-internet";
