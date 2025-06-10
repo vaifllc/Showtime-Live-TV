@@ -3,21 +3,31 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 // Your web app's Firebase configuration
-// Replace with your actual Firebase config values
+// These values should be set in environment variables
 const firebaseConfig = {
-  apiKey: 'AIzaSyB3uDpwHAnspQTCe45_vtxYMxxEs3REuRY',
+  apiKey: process.env.VUE_APP_FIREBASE_API_KEY || 'your-api-key',
+  authDomain: process.env.VUE_APP_FIREBASE_AUTH_DOMAIN || 'your-project.firebaseapp.com',
+  projectId: process.env.VUE_APP_FIREBASE_PROJECT_ID || 'your-project-id',
+  storageBucket: process.env.VUE_APP_FIREBASE_STORAGE_BUCKET || 'your-project.firebasestorage.app',
+  messagingSenderId: process.env.VUE_APP_FIREBASE_MESSAGING_SENDER_ID || 'your-sender-id',
+  appId: process.env.VUE_APP_FIREBASE_APP_ID || 'your-app-id',
+  measurementId: process.env.VUE_APP_FIREBASE_MEASUREMENT_ID || 'your-measurement-id',
+}
 
-  authDomain: 'showtime-live-tv.firebaseapp.com',
+// Validate that required environment variables are set
+const requiredEnvVars = [
+  'VUE_APP_FIREBASE_API_KEY',
+  'VUE_APP_FIREBASE_AUTH_DOMAIN',
+  'VUE_APP_FIREBASE_PROJECT_ID',
+  'VUE_APP_FIREBASE_STORAGE_BUCKET',
+  'VUE_APP_FIREBASE_MESSAGING_SENDER_ID',
+  'VUE_APP_FIREBASE_APP_ID'
+];
 
-  projectId: 'showtime-live-tv',
+const missingEnvVars = requiredEnvVars.filter(envVar => !process.env[envVar]);
 
-  storageBucket: 'showtime-live-tv.firebasestorage.app',
-
-  messagingSenderId: '693734156945',
-
-  appId: '1:693734156945:web:24311e81a5d8ee06056d30',
-
-  measurementId: 'G-KHYZNZW65N',
+if (missingEnvVars.length > 0 && process.env.NODE_ENV !== 'development') {
+  console.warn('Missing required Firebase environment variables:', missingEnvVars);
 }
 
 // Initialize Firebase
