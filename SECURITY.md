@@ -7,12 +7,12 @@
 This project uses environment variables to manage Firebase configuration securely. Follow these steps:
 
 1. **Copy the example environment file:**
-   ```bash
+   \`\`\`bash
    cp .env.example .env
-   ```
+   \`\`\`
 
 2. **Fill in your actual Firebase configuration values in `.env`:**
-   ```
+   \`\`\`
    VUE_APP_FIREBASE_API_KEY=your-actual-api-key
    VUE_APP_FIREBASE_AUTH_DOMAIN=showtime-live-tv.firebaseapp.com
    VUE_APP_FIREBASE_PROJECT_ID=showtime-live-tv
@@ -20,7 +20,7 @@ This project uses environment variables to manage Firebase configuration securel
    VUE_APP_FIREBASE_MESSAGING_SENDER_ID=693734156945
    VUE_APP_FIREBASE_APP_ID=1:693734156945:web:24311e81a5d8ee06056d30
    VUE_APP_FIREBASE_MEASUREMENT_ID=G-KHYZNZW65N
-   ```
+   \`\`\`
 
 ### Service Account Key (Admin SDK)
 
